@@ -65,7 +65,7 @@ let NERDTreeWinSize=26
 
 "twitvim---------------
 let twitvim_browser_cmd='firefox'
-let twitvim_count=60
+let twitvim_count=40
 
 "vim-latex-------------
 filetype plugin on
