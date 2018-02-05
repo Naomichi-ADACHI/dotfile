@@ -20,6 +20,7 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('twitvim/twitvim')
 	call dein#add('vim-latex/vim-latex')
 	call dein#add('scrooloose/nerdtree')
+	call dein#add('townk/vim-autoclose')
 
 	" Required:
 	call dein#end()
@@ -114,6 +115,8 @@ set linespace=1
 set showmatch
 set cmdheight=2
 set laststatus=2
+set showbreak=↪
+set tabline=2
 "set cindent
 "set expandtab
 "set tabstop=4
@@ -140,9 +143,13 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=b
 hi CursorLine gui=underline guifg=NONE guibg=NONE
+hi NonText guifg=Blue guibg=NONE
 hi SpecialKey guifg=Grey guibg=NONE
 
 "--for python
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
+"--my command
+nnoremap nt :<C-u>tabnew<CR>
