@@ -54,4 +54,4 @@ add-zsh-hook precmd _update_vcs_info_msg
 #alias
 alias ll='ls -al --color=auto'
 alias gp11='g++ -std=c++11 -O3'
-
+alias shutdown='shutdown -h now'
