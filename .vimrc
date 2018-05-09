@@ -25,6 +25,8 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('vim-latex/vim-latex')
 	call dein#add('scrooloose/nerdtree')
 	call dein#add('townk/vim-autoclose')
+	call dein#add('vim-scripts/Align')
+	call dein#add('vim-scripts/SQLUtilities')
 
 	" Required:
 	call dein#end()
