@@ -3,8 +3,8 @@
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-(which zsh 1>/dev/null 2>&1 && zsh || ~/local/bin/zsh) && exit
+#[[ $- != *i* ]] && return
+#(which zsh 1>/dev/null 2>&1 && zsh || ~/local/bin/zsh) && exit
 alias ls='ls --color=auto'
 alias ll='ls -al'
 alias google-chrome='google-chrome --no-sandbox'
