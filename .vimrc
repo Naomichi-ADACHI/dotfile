@@ -27,6 +27,8 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('townk/vim-autoclose')
 	call dein#add('vim-scripts/Align')
 	call dein#add('vim-scripts/SQLUtilities')
+	call dein#add('mattn/emmet-vim')
+	call dein#add('tpope/vim-surround')
 
 	" Required:
 	call dein#end()
@@ -159,3 +161,6 @@ autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 "--my command
 nnoremap nt :<C-u>tabnew<CR>
+
+"--emmet-vim
+"let g:user_emmet_leader_key='<c-t>'
