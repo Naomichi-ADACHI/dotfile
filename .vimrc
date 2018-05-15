@@ -8,15 +8,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
+set runtimepath+=/c/Users/user/.vim/bundles/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('~/.vim/bundles')
-	call dein#begin('~/.vim/bundles')
+if dein#load_state('/c/Users/user/.vim/bundles')
+  call dein#begin('/c/Users/user/.vim/bundles')
 
-	" Let dein manage dein
-	" Required:
-	call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
+  " Let dein manage dein
+  " Required:
+  call dein#add('/c/Users/user/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
 "  call dein#add('Shougo/neosnippet.vim')
@@ -25,6 +25,12 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('vim-latex/vim-latex')
 	call dein#add('scrooloose/nerdtree')
 	call dein#add('townk/vim-autoclose')
+	call dein#add('vim-scripts/Align')
+	call dein#add('vim-scripts/SQLUtilities')
+	call dein#add('mattn/emmet-vim')
+	call dein#add('tpope/vim-surround')
+	"call dein#add('lilydjwg/colorizer')
+	"call dein#add('pasela/unite-webcolorname')
 
 	" Required:
 	call dein#end()
@@ -157,3 +163,6 @@ autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 "--my command
 nnoremap nt :<C-u>tabnew<CR>
+
+"--emmet-vim
+"let g:user_emmet_leader_key='<c-t>'
